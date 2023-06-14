@@ -1,0 +1,852 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --first-color: white;
+  --second-color: black;
+}
+.container {
+  max-width: 1320px;
+  padding: 0;
+  margin: 0 auto;
+}
+header {
+  background: linear-gradient(to right, black 50%, #57b8ff 50%);
+  height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+nav a img {
+  padding-right: 5px;
+}
+.logo-text {
+  color: #ffffff;
+  margin-left: -90px;
+  font-size: 36px;
+  margin-bottom: -20px;
+}
+.home {
+  background: linear-gradient(to right, black 50%, #57b8ff 50%);
+  height: 950px;
+}
+.home-content {
+  padding-top: 200px;
+}
+li {
+  list-style: none;
+}
+box-icon {
+  display: none;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+nav img {
+  padding-top: 20px;
+  max-width: 100%;
+}
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#dark-light {
+  border: 0;
+  padding-top: 10px;
+}
+.light .era {
+  background-color: var(--first-color);
+}
+.light .news {
+  background-color: var(--first-color);
+}
+.light .multiplayer {
+  background-color: var(--first-color);
+}
+.light .home {
+  background: linear-gradient(
+    to right rgba(255, 255, 255, 1) 50%,
+    rgb(46, 47, 112) 50%
+  ) !important;
+  /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.light * {
+  color: var(--second-color) !important;
+}
+.contact {
+  border: 1px solid var(--first-color);
+  width: 178px;
+  height: 62px;
+  margin-top: 20px;
+}
+.contact a {
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.nav-buttons button {
+  background-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 60px;
+  padding-top: 20px;
+}
+
+.nav-link {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.title1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14.5px;
+}
+.title7 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14.5px;
+  padding-top: 130px;
+}
+
+.title1 p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #57b8ff;
+}
+.title7 p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #57b8ff;
+}
+.title2 img {
+  margin-left: 210px;
+}
+.title2-text {
+  padding-top: -10px;
+}
+.title2 p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 86px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.title3 p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #999999;
+  padding-top: 45px;
+  padding-bottom: 53px;
+}
+
+.home-btn button {
+  background: #000000;
+  border-radius: 0px;
+  height: 70px;
+  width: 203px;
+  border: 0;
+}
+.home-btn button:hover {
+  background: #57b8ff;
+  border-radius: 0px;
+  height: 70px;
+  width: 203px;
+  transition: 0.5s;
+}
+.home-btn button a {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+.home-content {
+  display: flex;
+  flex-direction: row;
+}
+.sponsor-content p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #555555;
+  padding-top: 29px;
+}
+.sponsor-content h1 {
+  padding-top: 128px;
+  padding-bottom: 7px;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #222730;
+}
+.sponsor-line {
+  padding-left: 42%;
+}
+.sponsor {
+  background-color: #fdd04a;
+  height: 542px;
+}
+.sponsor-images {
+  padding-top: 41px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.shop {
+  background: url(./img/shop.png);
+  height: 1072px;
+}
+.shop-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.title4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 136px;
+}
+.title4 p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #57b8ff;
+  padding-left: 14.5px;
+}
+.title5 h2 {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-top: 22px;
+}
+.title5 h3 {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(223, 223, 223, 0.8);
+  padding-top: 39px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  width: 642.4px;
+  height: 212px;
+}
+.card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18.3px;
+  padding-top: 35px;
+  padding-left: 38.3px;
+}
+.card-title p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.card-title2 {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(223, 223, 223, 0.8);
+  padding-left: 87.3px;
+  padding-top: 19px;
+}
+.shop-card {
+  padding-top: 60.5px;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+.shop-card2 {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+.title6 h3 {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-top: 22px;
+}
+.era {
+  background-color: #000000;
+}
+.title6 p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(223, 223, 223, 0.8);
+  padding-top: 38px;
+}
+.title6 button {
+  width: 203px;
+  height: 70px;
+  background-color: #57b8ff;
+  margin-top: 54px;
+}
+.title6 button a {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.era-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 821px;
+}
+video {
+  background-color: #2c0000;
+  border-radius: 40px;
+  width: 100%;
+}
+.multiplayer {
+  background-color: #000000;
+}
+.mult-card {
+  background: url(./img/mult2.png);
+  height: 732px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.mult-card1 {
+  background: url(./img/back-mult.png);
+  height: 732px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.mult-card2 {
+  background: url(./img/mult-back.png);
+  height: 732px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.mult-card p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-top: 30px;
+}
+.mult-card1 p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-top: 30px;
+}
+.mult-card2 p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-top: 30px;
+}
+.mult-cards {
+  display: flex;
+  flex-direction: row;
+}
+.news {
+  background-color: #000000;
+  padding-bottom: 95px;
+}
+
+.news-content .late {
+  display: inline-block;
+  padding-top: 22px;
+  padding-bottom: 68px;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.news-left .april {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #57b8ff;
+  padding-top: 54px;
+  padding-bottom: 28px;
+  display: inline-block;
+}
+.news-left h4 {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  text-transform: capitalize;
+  color: #ffffff;
+  display: inline-block;
+}
+.new-head button {
+  width: 203px;
+  height: 70px;
+  background-color: #57b8ff;
+  margin-top: 54px;
+}
+.new-head button a {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+.new-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.news-left {
+  display: flex;
+  flex-direction: column;
+}
+.news-c {
+  display: flex;
+  flex-direction: row;
+}
+.new-card h5 {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #57b8ff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.new-card p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.news-cards {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.new-card {
+  padding-bottom: 38px;
+}
+.footer-content h2 {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  text-align: center;
+  color: #141820;
+  padding-top: 126px;
+}
+footer {
+  background: url(./img/foot-back.png);
+  background-size: cover;
+}
+.footer-content img {
+  padding-left: 47%;
+}
+.foot-text {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  color: #555555;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+input {
+  width: 445px;
+  height: 69px;
+  border: 0;
+  outline: none;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  color: #555555;
+  padding-left: 13px;
+}
+form button {
+  background: #57b8ff;
+  border: 0;
+  width: 221px;
+  height: 70px;
+  padding-left: -10px;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+form {
+  padding-bottom: 135px;
+  display: flex;
+  justify-content: center;
+}
+.kontakt {
+  display: none;
+}
+.darkk {
+  margin-top: -15px;
+  background-color: transparent;
+}
+
+@media (max-width: 1320px) {
+  .sponsor-images img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+  }
+  .home-content {
+    text-align: center;
+  }
+
+  .sponsor-images {
+    padding-top: 41px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+  .shop-card {
+    padding-top: 60.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .shop-card2 {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .sponsor {
+    background-color: #fdd04a;
+    height: 900px;
+  }
+  .shop {
+    background: url(./img/shop.png);
+    height: 1572px;
+  }
+  .era-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 1280px;
+  }
+  .news-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home {
+    height: 1300px;
+  }
+  .mult-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-link {
+    display: none;
+  }
+  /* .mult-cards {
+    display: flex;
+    flex-direction: row;
+  } */
+
+  .home-content {
+    padding-top: 200px;
+    padding-bottom: 150px;
+  }
+  box-icon {
+    display: inline-block;
+  }
+  .footer-content img {
+    display: none;
+  }
+  .home-right img {
+    width: 100%;
+    /* background-size: 80%; */
+  }
+  .home {
+    height: 1500px;
+    background: linear-gradient(to right, black 60%, #57b8ff);
+  }
+  .home-content {
+    height: 1800px;
+  }
+  header {
+    background: linear-gradient(to right, black 60%, #57b8ff);
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 50;
+  }
+}
+@media (max-width: 700px) {
+  .news-left img {
+    width: 300px;
+  }
+  .title2 p {
+    font-size: 48px;
+  }
+  .news-cards {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    width: 350.4px;
+    height: 412px;
+  }
+  .home-right img {
+    width: 100%;
+    height: 400px;
+    /* display: none; */
+    /* background-size: 80%; */
+  }
+  .shop {
+    background: url(./img/shop.png);
+    height: 2572px;
+  }
+  .title2 img {
+    display: none;
+  }
+  .sponsor-line {
+    display: none;
+  }
+  .era-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 1600px;
+  }
+  .contact {
+    border: 1px solid white;
+    width: 128px;
+    height: 62px;
+    margin-top: 20px;
+  }
+  .mult-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .home-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .contact {
+    display: none;
+  }
+  .new-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .kontakt {
+    display: inline-block;
+    padding-top: 5px;
+  }
+  .footer-content h2 {
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 82px;
+    text-align: center;
+    color: #141820;
+    padding-top: 126px;
+  }
+  .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .mult-card {
+    max-width: 100%;
+  }
+  .mult-card1 {
+    max-width: 100%;
+  }
+  .mult-card2 {
+    max-width: 100%;
+  }
+  form {
+    padding-bottom: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  input {
+    max-width: 100%;
+  }
+}
+@media (max-width: 410px) {
+  .sponsor {
+    height: 1200px;
+  }
+}
