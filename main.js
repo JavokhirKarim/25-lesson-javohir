@@ -12,3 +12,8 @@ modeBtn.addEventListener("click", function () {
   //   }
   document.body.classList.toggle("light");
 });
+
+const loading = document.getElementById("loading");
+window.addEventListener("load", () => {
+  loading.classList.add("loading-none");
+});
