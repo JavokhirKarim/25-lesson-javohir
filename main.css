@@ -34,7 +34,7 @@ nav a img {
   margin-bottom: -20px;
 }
 .home {
-  background: linear-gradient(to right, rgb(220, 166, 20) 50%, #57b8ff 50%);
+  background: linear-gradient(to right, rgb(0, 0, 0) 50%, #57b8ff 50%);
   height: 950px;
 }
 .home-content {
